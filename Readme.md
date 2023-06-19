@@ -31,7 +31,7 @@ Edit .env file in the project and provide your database DSN. a sample DSN is alr
 
 For postgreSQL it should look like this:
 
-> DATABASE_DSN=postgresql://{DB_USER_NAME}:${DB_PASSWORD}@db:${DB_PORT}/${DB_NAME}
+> DATABASE_DSN=postgresql://{DB_USER_NAME}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}
 
 **Note** that if `DATABASE_URL` environment variable exists, it has higher priority to .env file to load the DB.
 
