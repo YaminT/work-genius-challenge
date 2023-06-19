@@ -60,3 +60,8 @@ It should test all the cases automatically.
 
 > Right now, the tests are depended to each other as one test case might provide data for another one. so running them individually may not work the best. It would be a good improvement to provide a fixed state of database before running each test but that would take more time to setup and run and I believe it is out of scope of this challenge.
 
+
+### A simple note about Adding users to teams
+
+The API accepts user's id or user's email. if both are provided, id will be used. And if neither are provided, an error would raise.
+The same thing happens for team's id or team's name 
